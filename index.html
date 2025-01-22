@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .payment-container {
+            max-width: 400px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .qr-code {
+            margin: 20px 0;
+        }
+        .info {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Test Payment</h1>
+        <div class="info">
+            <p><strong>Address:</strong> 0x0df849b4096610770248C0257a899BCd1Da9745b</p>
+            <p><strong>Currency:</strong> USDT (erc-20) (USDTE)</p>
+        </div>
+        <div class="qr-code">
+            <a href="0x0df849b4096610770248C0257a899BCd1Da9745b" target="_blank">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?data=0x0df849b4096610770248C0257a899BCd1Da9745b&amp;size=150x150" alt="QR Code">
+            </a>
+        </div>
+        <p>Scan the QR code with your Tether USD wallet to complete the payment.</p>
+    </div>
+</body>
+</html>
